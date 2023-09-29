@@ -12,6 +12,8 @@ async function createBook(req, res) {
   };
 
   await bookService.createBook(book);
+
+  res.status(201);
 }
 
 module.exports = {

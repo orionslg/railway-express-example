@@ -15,7 +15,7 @@ async function createBook(book) {
     const mappedBook = {
       data: {
         title: book.title,
-        author: book.Author
+        author: book.author
       }
     }
     await prisma.book.create(mappedBook);
